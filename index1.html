@@ -3,7 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <title>Campaign Cards</title>
-  <link rel="stylesheet" href="module-card.css">
+  <!-- <link rel="stylesheet" href="module-card.css"> -->
+  <style>
+    /* General layout */
+    body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+    }
+
+    .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    }
+
+    .cards-pdf {
+    align-items: center;
+    padding: 0rem;
+    gap: 0rem;
+    margin: 0rem;
+    min-height: 48rem;
+    }
+
+    /* Card */
+    .card {
+    background: #2a2a2a;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 45rem;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+
+    /* Accent color (overridden per card inline) */
+    --accent: #5836ed;
+    }
+
+    /* Header with title + level */
+    .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+    }
+
+    .card-title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--accent);
+    }
+
+    /* Level badge */
+    .level-badge {
+    text-align: center;
+    }
+
+    .level-badge .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.25rem;
+    }
+
+    .level-badge span {
+    font-size: 0.8rem;
+    color: #ccc;
+    }
+
+    /* Rest of card */
+    .card-meta {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    }
+
+    .card-description {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    }
+
+    .card-features {
+    margin: 0 0 1rem 1.2rem;
+    }
+
+    .card-ideal {
+    background: rgba(255,255,255,0.05);
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    }
+
+  </style>
 </head>
 <body>
   <main class="cards-container">
